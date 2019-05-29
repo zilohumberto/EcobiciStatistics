@@ -1,0 +1,17 @@
+
+EXTERNAL_PATH = "/home/ecobici/EXTERNAL_SOURCE/"
+EXTERNAL_PATH_WATCHER_INTERVAL_SECONDS = 10
+EXTERNAL_PATH_WITH_ERRORS_PATH = "/home/ecobici/output/error_process/"
+EXTERNAL_PATH_WITH_SUCCESS_PATH = "/home/ecobici/output/successed_process/"
+
+TRANSLATOR_DATE_FORMATS = ['%Y-%m-%dT%H:%M:%S.%f', '%Y-%m-%dT%H:%M:%S']
+# Installation directory
+APP_DIR = '/home/ecobici/'
+
+# API Configuration
+API_DATE_FORMAT = '%Y-%m-%dT%H:%M:%SZ'
+
+# Development settings
+DEVELOPMENT_API_HOST = '0.0.0.0'
+DEVELOPMENT_API_PORT = 5000
+DEVELOPMENT_API_DEBUG = True
