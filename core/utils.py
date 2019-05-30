@@ -1,5 +1,5 @@
 from datetime import datetime
-from settings import API_DATE_FORMAT
+from core.settings import API_DATE_FORMAT
 
 
 def convert_to(value, attr_type):

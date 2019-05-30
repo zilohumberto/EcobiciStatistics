@@ -6,7 +6,7 @@ class Processor(object):
         try:
             self._do_process(register)
         except Exception as e:
-            print str(e), e.message
+            print(str(e), e.message)
             raise NameError(e)
 
     def _do_process(self, register):
@@ -15,7 +15,7 @@ class Processor(object):
 
     @staticmethod
     def _update_instance_with_dict(instance, data, ignore_fields=()):
-        for key, value in data.iteritems():
+        for key, value in data.items():
             if key not in ignore_fields:
                 setattr(instance, key, value)
 

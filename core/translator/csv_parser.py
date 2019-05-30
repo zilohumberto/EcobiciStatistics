@@ -15,7 +15,7 @@ class CsvParser(object):
     def parse(self, xml_path):
         resource = os.path.basename(xml_path)
         root = []
-        with open(xml_path, 'rb') as csv_file:
+        with open(xml_path, 'r') as csv_file:
             csv_reader = csv.reader(csv_file, delimiter=',')
             titles = next(csv_reader)
             for row_value in csv_reader:
@@ -32,7 +32,7 @@ class CsvParser(object):
 
     def get_parser(self, **kwargs):
 
-        for v, register_parser in self.register_parser.iteritems():
+        for v, register_parser in self.register_parser.items():
             if kwargs.get('root').tag.startswith(register_parser.main_tag):
                 return register_parser().parse(kwargs)
 

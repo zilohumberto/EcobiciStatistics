@@ -1,4 +1,4 @@
-from register_parser import RegisterParser
+from core.translator.register_parsers.register_parser import RegisterParser
 
 
 class RegisterCsvParser(RegisterParser):

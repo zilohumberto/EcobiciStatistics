@@ -2,7 +2,7 @@
 EXTERNAL_PATH = "/home/ecobici/EXTERNAL_SOURCE/"
 EXTERNAL_PATH_WATCHER_INTERVAL_SECONDS = 10
 EXTERNAL_PATH_WITH_ERRORS_PATH = "/home/ecobici/output/error_process/"
-EXTERNAL_PATH_WITH_SUCCESS_PATH = "/home/ecobici/output/successed_process/"
+EXTERNAL_PATH_WITH_SUCCESS_PATH = "/home/ecobici/output/ok_process/"
 
 TRANSLATOR_DATE_FORMATS = ['%Y-%m-%dT%H:%M:%S.%f', '%Y-%m-%dT%H:%M:%S']
 # Installation directory

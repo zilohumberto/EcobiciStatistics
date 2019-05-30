@@ -1,3 +1,3 @@
-from register_parser_csv import RegisterCsvParser
-from register_parser import RegisterParser
-from register_parser_factory import RegisterParserFactory
+from core.translator.register_parsers.register_parser_csv import RegisterCsvParser
+from core.translator.register_parsers.register_parser import RegisterParser
+from core.translator.register_parsers.register_parser_factory import RegisterParserFactory

@@ -7,6 +7,7 @@ from core.settings import (EXTERNAL_PATH,
                            EXTERNAL_PATH_WITH_ERRORS_PATH,
                            EXTERNAL_PATH_WITH_SUCCESS_PATH)
 from core.utils import convert_to_string
+from core.database.data import data
 
 
 class FileHandler(object):
@@ -23,6 +24,8 @@ class FileHandler(object):
         ]
         for patterns_file in only_patters_file:
             FileHandler.process(patterns_file)
+        print("stations ", len(data.get('station')))
+        print("trip", len(data.get('trip')))
 
     @staticmethod
     def process(file_to_translate):

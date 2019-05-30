@@ -11,6 +11,7 @@ class Parametric(object):
 class Station(Parametric):
     long = None
     lat = None
+    nombre = None
     domicilio = None
     image = None
     automat = None
