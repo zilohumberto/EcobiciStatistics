@@ -19,3 +19,4 @@ swagger-spec-validator==2.4.3
 tzlocal==1.5.1
 virtualenv==16.0.0
 watchdog==0.9.0
+elasticsearch==1.2.0

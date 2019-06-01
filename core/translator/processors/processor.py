@@ -6,7 +6,7 @@ class Processor(object):
         try:
             self._do_process(register)
         except Exception as e:
-            print(str(e), e.message)
+            print(str(e), " processor class")
             raise NameError(e)
 
     def _do_process(self, register):

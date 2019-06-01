@@ -5,10 +5,9 @@ LABEL Creator: "Humberto Felipe Rodriguez Rodriguez"
 RUN apt update -y
 
 # Install dependencies
-RUN apt-get update && apt-get install \
-  -y --no-install-recommends python3 python3-virtualenv
+RUN apt-get update && apt-get install -yq --no-install-recommends python3 python3-virtualenv
 
-RUN apt install -y  python3-pip -y
+RUN apt install -yq  python3-pip
 
 RUN mkdir /home/ecobici/
 
@@ -22,13 +21,12 @@ RUN mkdir /home/ecobici/output/EXTERNAL_SOURCE
 
 ENV PYTHONPATH /home/ecobici
 
-RUN python3 -m virtualenv --python=/usr/bin/python3 /opt/venv
+COPY dev-requirements.txt /
 
-COPY dev-requirements.txt .
-
-RUN . /opt/venv/bin/activate && pip install -r dev-requirements.txt
+RUN pip3 install -r /dev-requirements.txt
 
 RUN cd /home/ecobici/
 
-CMD . /opt/venv/bin/activate
+CMD ["python3","/home/ecobici/core/translator/folder_watcher.py"]
+
 
