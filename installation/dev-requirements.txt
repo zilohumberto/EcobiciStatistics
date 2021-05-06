@@ -2,7 +2,7 @@ APScheduler==3.6.0
 alembic==1.0.10
 docxtpl==0.5.20
 Flask==1.0.3
-Flask-Cors==3.0.7
+Flask-Cors==3.0.9
 Flask-RESTful==0.3.7
 jsonpointer==2.0
 jsonschema==3.0.1
